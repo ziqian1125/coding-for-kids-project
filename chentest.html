@@ -5,8 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">   
 </head>
+
+
+<style type="text/css">
+  #gsywly {
+  display:none;
+  }
+  </style>
 <body>
-    
+
+  <div id="button">
+    <ul>
+    <li id="a"><a href="#" onclick="change_div('gsgs')">公司概述</a></li>
+    <li id="b"><a href="#" onclick="change_div('gsywly')">公司业务领域</a></li>
+    </ul>
+    </div>
+    <div id="gsgs">
+    <h2>公司概述</h2>
+    </div>
+    <div id="gsywly" >
+    <h2>公司业务领域</h2>
+    </div>
+
+
+    <script type="text/javascript">
+      function change_div(id){
+      if (id == 'gsywly' )
+      {
+      document.getElementById("gsgs").style.display = 'none' ;
+      document.getElementById("gsywly").style.display = 'block' ;
+      }
+      else
+      {
+      document.getElementById("gsywly").style.display = 'none' ;
+      document.getElementById("gsgs").style.display = 'block' ;
+      }
+      }
+      </script>
 </body>
 </html>

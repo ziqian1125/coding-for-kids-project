@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="clickbutton1()">button1</button>
+    <button onclick="clickbutton2()">button2</button>
+
+    <div id="course1" >course1 progress</div>
+    <div id="course2" style="display:none;">course2 progress</div>
+
+    <script>
+
+        //l write a functuin called clickbutton1 to control display of course1 progress,when user
+        //click the button1,because of the onclick attributes,they will trigger this functions.
+        function clickbutton1(){
+            //l use document.getElementById("course1") to get the elements which l want to change the
+            //CSS style of that.
+            document.getElementById("course1").style.display = "block"
+            document.getElementById("course2").style.display = "none"
+        }
+
+        //clickbutton2() works similar like clickbutton1
+
+        function clickbutton2(){
+            document.getElementById("course1").style.display = "none"
+            document.getElementById("course2").style.display = "block"
+        }        
+        
+    </script>
+</body>
+</html>

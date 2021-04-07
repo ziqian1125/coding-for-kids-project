@@ -6,9 +6,14 @@
 }
 
 .leftside{
- margin-top: 200px;
+ margin-top: 30px;
  background-color:rgba(0, 29, 74, 1);
 
+ width: 300px;
+}
+
+.avatar {
+   height: 200px;
 }
 
 

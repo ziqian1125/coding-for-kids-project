@@ -7,7 +7,10 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">   
-</head>
+    <link rel="stylesheet" href="assets/css/carousel.css">
+
+
+  </head>
 
 <style>
 
@@ -18,9 +21,13 @@
 }
 
 .leftside{
-  margin-top: 200px;
+  margin-top: 30px;
   background-color:rgba(0, 29, 74, 1);
 
+}
+
+.avatar{
+  height:200px;
 }
 
 
@@ -152,30 +159,33 @@ a {
 
     <div style="display: flex;justify-content:space-around;;">
       <div class="leftside" >
-        <div>
-          <img src="assets/img/img/avatar.jpg">
-          <p class="name">Marten</p>
-          <p class="xpoints">99XP</p>
+        <div style="text-align: center;">
+          <img src="assets/img/avatar.jpg" class="avatar">
+          <p class="name" style="text-align: center;color: white;">Marten 99XP</p>
+          <!-- <p class="xpoints" style="text-align: center;color: white;"></p> -->
         </div>
     
         <div style="margin: 30px;">
     
           <div style="margin: 10px;">
-            <button type="button" class="btn btn-primary btn-lg selfcssbutton">My room</button>
+            <button type="button" class="btn btn-primary btn-lg selfcssbutton" onclick="location.href='MyRoom.html'">My room</button>
           </div>
       
           <div style="margin: 10px;">
-            <button type="button" class="btn btn-primary btn-lg selfcssbutton" >courses</button>
+            <button type="button" class="btn btn-primary btn-lg selfcssbutton" onclick="location.href='courses.html'">Courses</button>
           </div>
       
           <div style="margin: 10px;">
-            <button type="button" class="btn btn-primary btn-lg selfcssbutton" >My community</button>
+            <button type="button" class="btn btn-primary btn-lg selfcssbutton" onclick="location.href='community.html'">My community</button>
           </div>
       
           <div style="margin: 10px;">
-            <button type="button" class="btn btn-primary btn-lg selfcssbutton" >find tutotial</button>
+            <button type="button" class="btn btn-primary btn-lg selfcssbutton" onclick="location.href='tutorial.html'">Find tutotial</button>
           </div>
-      
+
+          <div style="margin: 10px;">
+            <button type="button" class="btn btn-primary btn-lg selfcssbutton" onclick="location.href='Classroom.html'">Live classroom</button>
+          </div>
         </div>
       </div>
 
@@ -183,14 +193,17 @@ a {
 
 <!-- new course -->
 
-        <div  style="margin-top: 100px;">
+        <!-- <div  style="margin-top: 100px;">
           <img style="margin: 10px;"  src="assets/img/othercourse1.jpg">
           <img style="margin: 10px;"  src="assets/img/othercourse2.jpg">
           <img style="margin: 10px;"  src="assets/img/othercourse3.jpg">
           <img style="margin: 10px;"  src="assets/img/othercourse4.jpg">
-          <img style="margin: 10px;"  src="assets/img/othercourse5.jpg">
-        </div>
-        <button type="button" class="btn btn-primary btn-lg selfcssbutton" style="width:150px;display:block;margin:0 auto;margin-top: 30px;">find more</button></p>
+        </div> -->
+
+
+
+
+        <!-- <button type="button" class="btn btn-primary btn-lg selfcssbutton" style="width:150px;display:block;margin:0 auto;margin-top: 30px;">find more</button></p> -->
 
 
         <p style="color: white;margin: 30px;margin-bottom: 0px;font-weight: bold;">courses you enrolled</p>
@@ -239,10 +252,10 @@ a {
 
         <div style="width: 400px;margin-left: 30px;margin-top: 30px;">
           <p>
-            <a style="background-color: rgba(83, 125, 141, 1);border-color:rgba(83, 125, 141, 1) ;" class="btn btn-primary" onclick="change_div('gsgs')">
+            <a style="background-color: rgba(83, 125, 141, 1);border-color:rgba(83, 125, 141, 1) ;" class="btn btn-primary" onclick="change_div('gsgs')" id="communityproject">
               community project
             </a>
-            <button style="background-color: rgba(0, 29, 74, 1);border-color:rgba(0, 29, 74, 1) ;" class="btn btn-primary" type="button" onclick="change_div('gsywly')">
+            <button style="background-color: rgba(0, 29, 74, 1);border-color:rgba(0, 29, 74, 1) ;" class="btn btn-primary" type="button" onclick="change_div('gsywly')" id="yourproject">
               your project
             </button>
           </p>
@@ -333,13 +346,21 @@ a {
       function change_div(id){
         if (id == 'gsywly' )
         {
-        document.getElementById("gsgs").style.display = 'none' ;
-        document.getElementById("gsywly").style.display = 'block' ;
+          document.getElementById("gsgs").style.display = 'none' ;
+          document.getElementById("gsywly").style.display = 'block' ;
+          document.getElementById("yourproject").style.backgroundColor = "rgba(83, 125, 141, 1)"
+          document.getElementById("communityproject").style.backgroundColor = "rgba(0, 29, 74, 1) "
+          // document.getElementById("communityproject").style.border-color = "rgb(0, 29, 74) "
+          document.getElementById("communityproject").style.border = "1px solid rgb(0, 29, 74)"
+
         }
         else
         {
         document.getElementById("gsywly").style.display = 'none' ;
         document.getElementById("gsgs").style.display = 'block' ;
+        document.getElementById("yourproject").style.backgroundColor = "rgba(0, 29, 74, 1) "
+        document.getElementById("communityproject").style.backgroundColor = "rgba(83, 125, 141, 1)"
+
         }
       }
     </script>

@@ -4,9 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">   
+        <title>Coding for Kids - Learn to Code with Games</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">    
     </head>
 
 
@@ -123,17 +122,88 @@ a {
             <li ><a href="#"  style="color: white;">about</a></li>
             <li><a href="#" style="color: white;">review</a></li>
             <li><a href="#" style="color: white;">course</a></li>
-            <li><button type="button" class="btn btn-primary btn-lg selfcssbutton" style="width:150px;display:block;margin-right:10px;background-color: grey;border-color: grey;margin-left:40px;">sign in</button></p>
+            <li><button type="button" class="btn btn-primary btn-lg selfcssbutton" style="width:150px;display:block;margin-right:10px;background-color: grey;border-color: grey;margin-left:40px;"data-bs-toggle="modal" data-bs-target="#SignIn">sign in</button></p>
             </li>
-            <li><button type="button" class="btn btn-primary btn-lg selfcssbutton" style="width:150px;display:block;margin-right:10px;background-color: grey;border-color: grey;">join</button></p>
+            <li><button type="button" class="btn btn-primary btn-lg selfcssbutton" style="width:150px;display:block;margin-right:10px;background-color: grey;border-color: grey;"data-bs-toggle="modal" data-bs-target="#Register">join</button></p>
             </li>
         </ul>
 </header>
 
 <h1 style="color: white;margin: 0 auto;text-align:center;margin-top:100px;font-size: 80px;">Coding for kids</h1>
 
-<button type="button" class="btn btn-primary btn-lg selfcssbutton" style="width:200px;display:block;margin:0 auto;margin-top: 30px;background-color: rgba(83, 125, 141, 1);border-color: rgba(83, 125, 141, 1);">get started</button></p>
+ <!-- Button trigger modal -->
+ <button type="button" class="btn btn-primary btn-lg selfcssbutton" style="width:200px;display:block;margin:0 auto;margin-top: 30px;background-color: rgba(83, 125, 141, 1);border-color: rgba(83, 125, 141, 1);" data-bs-toggle="modal" data-bs-target="#Register">
+	Get started
+</button>
+<!-- Modal -->
+<div class="modal fade" id="Register" tabindex="-1" aria-labelledby="RegisterLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+	<div class="modal-content">
+		<div class="modal-header">
+		<h5 class="modal-title" id="RegisterLabel">Register</h5>
+		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			<main class="form-signin">
+				<form>
+				  <img  src="assets/puzzlr.png" alt="two puzzle pieces" style='width:100px; margin-bottom: 10px'>
+				  <h1 class="fontstyle">Registration form</h1>
+				  <p class="fontstyle3">Enter your email:  </p>
+				  <label for="inputEmail" class="visually-hidden">Email address</label>
+				  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+				  <br>
+				  <p class="fontstyle3">Choose your username:  </p>
+				  <label for="inputUsername" class="visually-hidden">"Username"</label>
+				  <input type="username" id="inputUsername" class="form-control" placeholder="Username" required>
+				  <p class="fontstyle3">Choose a password:  </p>
+				  <label for="inputPassword" class="visually-hidden">Password</label>
+				  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+				  <label for="inputPassword" class="visually-hidden">Repeat Password</label>
+				  <input type="password" id="inputPassword" class="form-control" placeholder="Repeat Password" required>
+				  <div class="checkbox mb-3">
+					<label class="fontstyle2">
+					  <input type="checkbox" value="terms-acceptance" required> I have read and accept the terms and conditions
+					</label>
+				  </div>
+				  <button class="buttonstyle" type="submit">Submit</button>
+				  <p class="mt-5 mb-3 text-muted">&copy; Coding for Kids 2021</p>
+				</form>
+			  </main> 
+			</div>
+        </div>
+        </div>
+    </div>
 
+	<div class="modal fade" id="SignIn" tabindex="-1" aria-labelledby="LoginLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="LoginLabel">Login</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<main class="form-signin">
+					<form>
+					  <div class="box1"><img  src="assets/puzzlr.png" alt="two puzzle pieces" style='width:100px; margin-bottom: 10px'>
+					  </div> 
+					  <h1 class="fontstyle">Please sign in</h1>
+					  <label for="inputEmail" class="visually-hidden">Email address</label>
+					  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+					  <label for="inputPassword" class="visually-hidden">Password</label>
+					  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+					  <div class="checkbox mb-3">
+						<label class="fontstyle2">
+						  <input type="checkbox" value="remember-me"> Remember me
+						</label>
+					  </div>
+					  <button class="buttonstyle" type="submit">Sign in</button>
+					  <p class="mt-5 mb-3 text-muted">&copy; Coding for Kids 2021</p>
+					</form>
+				  </main>
+				</div>
+			</div>
+			</div>
+		</div>
 
 <div style="display: flex;justify-content: space-around;"> 
     <div>
@@ -151,6 +221,7 @@ a {
 </div>
 
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 

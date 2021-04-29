@@ -86,58 +86,46 @@ input#search-bar{
 
 
 <!-- position:relative -->
-    <div class="container" >
+    <div style="display: flex;justify-content:space-around;">
 
 
-
-
-        <div class="row">
-            <div class="col-4">
-                
-                <!-- col-4 -->
-
-
-                <div class="leftside" style="width:280px;">
-                    <div style="text-align: center;">
-                      <img src="assets/img/avatar.jpg" class="avatar">
-                      <p class="name" style="text-align: center;color: white;">Marten 99XP</p>
-                      <!-- <p class="xpoints" style="text-align: center;color: white;"></p> -->
-                    </div>
-                
-                    <div style="margin: 30px;">
-                
-                      <div style="margin: 10px;">
-                        <button type="button" class="btn btn-primary btn-lg selfcssbutton" onclick="location.href='0.dashboard.html'">My room</button>
-                      </div>
-                  
-                      <div style="margin: 10px;">
-                        <button type="button" class="btn btn-primary btn-lg selfcssbutton" onclick="location.href='courses.html'">Courses</button>
-                      </div>
-                  
-                      <div style="margin: 10px;">
-                        <button type="button" class="btn btn-primary btn-lg selfcssbutton" onclick="location.href='community.html'">My community</button>
-                      </div>
-                  
-                      <div style="margin: 10px;">
-                        <button type="button" class="btn btn-primary btn-lg selfcssbutton" onclick="location.href='tutorial.html'"  style="background-color: rgba(229, 211, 82, 1)">Find tutotial</button>
-                      </div>
-            
-                      <div style="margin: 10px;">
-                        <button type="button" class="btn btn-primary btn-lg selfcssbutton" onclick="location.href='Classroom.html'">Live classroom</button>
-                      </div>
-                    </div>
-                  </div>
-            
-
+        <div class="leftside" style="margin-top: 30px;margin-left: -40px;">
+            <div style="text-align: center;">
+                <img src="assets/img/avatar.jpg" style="height: 200px;">
+                <p class="name" style="color: white;text-align: center;">Marten 99XP</p>
+                <!-- <p class="xpoints">99XP</p> -->
             </div>
 
+            <div style="margin: 30px;">
 
+                <div style="margin: 10px;">
+                    <button type="button" class="btn btn-primary btn-lg selfcssbutton" onclick="location.href='0.dashboard.html'">Dashboard</button>
+                </div>
 
+                <div style="margin: 10px;">
+                    <button type="button" class="btn btn-primary btn-lg selfcssbutton" onclick="location.href='courses.html'" >Courses</button>
+                </div>
 
-            <div class="col-7">
+                <div style="margin: 10px;">
+                    <button type="button" class="btn btn-primary btn-lg selfcssbutton" onclick="location.href='community.html'">My community</button>
+                </div>
+
+                <div style="margin: 10px;">
+                    <button type="button" class="btn btn-primary btn-lg selfcssbutton" onclick="location.href='tutorial.html'" style="background-color: rgba(229, 211, 82, 1);">Find tutorial</button>
+                </div>
+
+                <div style="margin: 10px;">
+                    <button type="button" class="btn btn-primary btn-lg selfcssbutton" onclick="location.href='Classroom.html'">Live classroom</button>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="width: 800px;">
+            <p class="heading-text" style="margin-top: 20px; color:#f4f4f4; font-size: 30px; text-align: center; font-weight: bold;">Live Classroom</p>
+
+            <div class="col-12">
                 <!-- <p>col-8</p> -->
 
-                <div class="input-group input-group-sm mb-3" style="width:30%;margin-top: 70px;">
+                <div class="input-group input-group-sm mb-3" style="width:160px;margin-top: 30px;">
                     <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                     <span class="input-group-text" id="inputGroup-sizing-sm"><i class="bi bi-search"></i></span>
                 </div>
@@ -187,212 +175,208 @@ input#search-bar{
                     <h5>recently watched</h5>
                 </div>
 
-                <div style="display: flex;justify-content: space-between;">       
 
-                    <div class="dom1">
-                        <!-- position:absolute -->
-                        <img src="assets/img/tutorial/video1.png">
-                        <div class="dom2" style="margin: auto;text-align: center;">
-                            <img src="assets/img/play.png">
+                <div class="container">
+                    <div class="row">
+                        <div class="dom1 col">
+                            <!-- position:absolute -->
+                            <img src="assets/img/tutorial/video1.png">
+                            <div class="dom2" style="margin: auto;text-align: center;">
+                                <img src="assets/img/play.png">
+                            </div>
+        
+                            <h6 style="margin: 0px;;">Creating Mario</h6>
+        
+                            <div class="row">
+                                <div class="col-1">
+                                    <p>6</p>
+                                </div>
+                                <div class="col-2" style="margin-left: -10px;">
+                                    <i class="bi bi-chat-dots-fill" style="display: inline;color: #E5D352;"></i>
+                                </div>
+                                <div class="col-1">121</div>
+                                <div class="col">
+                                    <i class="bi bi-heart-fill" style="color: #AC3931;"></i>
+                                </div>
+                            </div>
+                            
+                        </div>    
+                        <div class="dom1 col">
+                            <!-- position:absolute -->
+                            <img src="assets/img/tutorial/video1.png">
+                            <div class="dom2" style="margin: auto;text-align: center;">
+                                <img src="assets/img/play.png">
+                            </div>
+        
+                            <h6 style="margin: 0px;;">Creating Mario</h6>
+        
+                            <div class="row">
+                                <div class="col-1">
+                                    <p>6</p>
+                                </div>
+                                <div class="col-2" style="margin-left: -10px;">
+                                    <i class="bi bi-chat-dots-fill" style="display: inline;color: #E5D352;"></i>
+                                </div>
+                                <div class="col-1">121</div>
+                                <div class="col">
+                                    <i class="bi bi-heart-fill" style="color: #AC3931;"></i>
+                                </div>
+                            </div>
+                            
+                        </div>    
+                        <div class="dom1 col">
+                            <!-- position:absolute -->
+                            <img src="assets/img/tutorial/video1.png">
+                            <div class="dom2" style="margin: auto;text-align: center;">
+                                <img src="assets/img/play.png">
+                            </div>
+        
+                            <h6 style="margin: 0px;;">Creating Mario</h6>
+        
+                            <div class="row">
+                                <div class="col-1">
+                                    <p>6</p>
+                                </div>
+                                <div class="col-2" style="margin-left: -10px;">
+                                    <i class="bi bi-chat-dots-fill" style="display: inline;color: #E5D352;"></i>
+                                </div>
+                                <div class="col-1">121</div>
+                                <div class="col">
+                                    <i class="bi bi-heart-fill" style="color: #AC3931;"></i>
+                                </div>
+                            </div>
+                            
                         </div>
-    
-                        <h6 style="margin: 0px;;">Creating Mario</h6>
-    
-                        <div class="row">
-                            <div class="col-1">
-                                <p>6</p>
+                        <div class="dom1 col">
+                            <!-- position:absolute -->
+                            <img src="assets/img/tutorial/video1.png">
+                            <div class="dom2" style="margin: auto;text-align: center;">
+                                <img src="assets/img/play.png">
                             </div>
-                            <div class="col-2" style="margin-left: -10px;">
-                                <i class="bi bi-chat-dots-fill" style="display: inline;color: #E5D352;"></i>
+        
+                            <h6 style="margin: 0px;;">Creating Mario</h6>
+        
+                            <div class="row">
+                                <div class="col-1">
+                                    <p>6</p>
+                                </div>
+                                <div class="col-2" style="margin-left: -10px;">
+                                    <i class="bi bi-chat-dots-fill" style="display: inline;color: #E5D352;"></i>
+                                </div>
+                                <div class="col-1">121</div>
+                                <div class="col">
+                                    <i class="bi bi-heart-fill" style="color: #AC3931;"></i>
+                                </div>
                             </div>
-                            <div class="col-1">121</div>
-                            <div class="col">
-                                <i class="bi bi-heart-fill" style="color: #AC3931;"></i>
-                            </div>
-                        </div>
-                        
-                    </div>    
+                            
+                        </div>    
+                    </div>
+                  </div>
 
 
-                    <div class="dom1">
-                        <!-- position:absolute -->
-                        <img src="assets/img/tutorial/video1.png">
-                        <div class="dom2" style="margin: auto;text-align: center;">
-                            <img src="assets/img/play.png">
-                        </div>
-    
-                        <h6 style="margin: 0px;;">Creating Mario</h6>
-    
-                        <div class="row">
-                            <div class="col-1">
-                                <p>6</p>
-                            </div>
-                            <div class="col-2" style="margin-left: -10px;">
-                                <i class="bi bi-chat-dots-fill" style="display: inline;color: #E5D352;"></i>
-                            </div>
-                            <div class="col-1">121</div>
-                            <div class="col">
-                                <i class="bi bi-heart-fill" style="color: #AC3931;"></i>
-                            </div>
-                        </div>
-                        
-                    </div>    
 
-                    <div class="dom1">
-                        <!-- position:absolute -->
-                        <img src="assets/img/tutorial/video1.png">
-                        <div class="dom2" style="margin: auto;text-align: center;">
-                            <img src="assets/img/play.png">
-                        </div>
-    
-                        <h6 style="margin: 0px;;">Creating Mario</h6>
-    
-                        <div class="row">
-                            <div class="col-1">
-                                <p>6</p>
-                            </div>
-                            <div class="col-2" style="margin-left: -10px;">
-                                <i class="bi bi-chat-dots-fill" style="display: inline;color: #E5D352;"></i>
-                            </div>
-                            <div class="col-1">121</div>
-                            <div class="col">
-                                <i class="bi bi-heart-fill" style="color: #AC3931;"></i>
-                            </div>
-                        </div>
-                        
-                    </div>    
-
-
-                    <div class="dom1">
-                        <!-- position:absolute -->
-                        <img src="assets/img/tutorial/video1.png">
-                        <div class="dom2" style="margin: auto;text-align: center;">
-                            <img src="assets/img/play.png">
-                        </div>
-    
-                        <h6 style="margin: 0px;;">Creating Mario</h6>
-    
-                        <div class="row">
-                            <div class="col-1">
-                                <p>6</p>
-                            </div>
-                            <div class="col-2" style="margin-left: -10px;">
-                                <i class="bi bi-chat-dots-fill" style="display: inline;color: #E5D352;"></i>
-                            </div>
-                            <div class="col-1">121</div>
-                            <div class="col">
-                                <i class="bi bi-heart-fill" style="color: #AC3931;"></i>
-                            </div>
-                        </div>
-                        
-                    </div>   
-                </div>
 
 
                 <div>
                     <h5>video by your community</h5>
                 </div>
 
-                <div style="display: flex;justify-content: space-between;">       
-
-                    <div class="dom1">
-                        <!-- position:absolute -->
-                        <img src="assets/img/tutorial/video1.png">
-                        <div class="dom2" style="margin: auto;text-align: center;">
-                            <img src="assets/img/play.png">
+                <div class="container">
+                    <div class="row">
+                        <div class="dom1 col">
+                            <!-- position:absolute -->
+                            <img src="assets/img/tutorial/video1.png">
+                            <div class="dom2" style="margin: auto;text-align: center;">
+                                <img src="assets/img/play.png">
+                            </div>
+        
+                            <h6 style="margin: 0px;;">Creating Mario</h6>
+        
+                            <div class="row">
+                                <div class="col-1">
+                                    <p>6</p>
+                                </div>
+                                <div class="col-2" style="margin-left: -10px;">
+                                    <i class="bi bi-chat-dots-fill" style="display: inline;color: #E5D352;"></i>
+                                </div>
+                                <div class="col-1">121</div>
+                                <div class="col">
+                                    <i class="bi bi-heart-fill" style="color: #AC3931;"></i>
+                                </div>
+                            </div>
+                            
+                        </div>    
+                        <div class="dom1 col">
+                            <!-- position:absolute -->
+                            <img src="assets/img/tutorial/video1.png">
+                            <div class="dom2" style="margin: auto;text-align: center;">
+                                <img src="assets/img/play.png">
+                            </div>
+        
+                            <h6 style="margin: 0px;;">Creating Mario</h6>
+        
+                            <div class="row">
+                                <div class="col-1">
+                                    <p>6</p>
+                                </div>
+                                <div class="col-2" style="margin-left: -10px;">
+                                    <i class="bi bi-chat-dots-fill" style="display: inline;color: #E5D352;"></i>
+                                </div>
+                                <div class="col-1">121</div>
+                                <div class="col">
+                                    <i class="bi bi-heart-fill" style="color: #AC3931;"></i>
+                                </div>
+                            </div>
+                            
+                        </div>    
+                        <div class="dom1 col">
+                            <!-- position:absolute -->
+                            <img src="assets/img/tutorial/video1.png">
+                            <div class="dom2" style="margin: auto;text-align: center;">
+                                <img src="assets/img/play.png">
+                            </div>
+        
+                            <h6 style="margin: 0px;;">Creating Mario</h6>
+        
+                            <div class="row">
+                                <div class="col-1">
+                                    <p>6</p>
+                                </div>
+                                <div class="col-2" style="margin-left: -10px;">
+                                    <i class="bi bi-chat-dots-fill" style="display: inline;color: #E5D352;"></i>
+                                </div>
+                                <div class="col-1">121</div>
+                                <div class="col">
+                                    <i class="bi bi-heart-fill" style="color: #AC3931;"></i>
+                                </div>
+                            </div>
+                            
                         </div>
-    
-                        <h6 style="margin: 0px;;">Creating Mario</h6>
-    
-                        <div class="row">
-                            <div class="col-1">
-                                <p>6</p>
+                        <div class="dom1 col">
+                            <!-- position:absolute -->
+                            <img src="assets/img/tutorial/video1.png">
+                            <div class="dom2" style="margin: auto;text-align: center;">
+                                <img src="assets/img/play.png">
                             </div>
-                            <div class="col-2" style="margin-left: -10px;">
-                                <i class="bi bi-chat-dots-fill" style="display: inline;color: #E5D352;"></i>
+        
+                            <h6 style="margin: 0px;;">Creating Mario</h6>
+        
+                            <div class="row">
+                                <div class="col-1">
+                                    <p>6</p>
+                                </div>
+                                <div class="col-2" style="margin-left: -10px;">
+                                    <i class="bi bi-chat-dots-fill" style="display: inline;color: #E5D352;"></i>
+                                </div>
+                                <div class="col-1">121</div>
+                                <div class="col">
+                                    <i class="bi bi-heart-fill" style="color: #AC3931;"></i>
+                                </div>
                             </div>
-                            <div class="col-1">121</div>
-                            <div class="col">
-                                <i class="bi bi-heart-fill" style="color: #AC3931;"></i>
-                            </div>
-                        </div>
-                        
-                    </div>    
-
-
-                    <div class="dom1">
-                        <!-- position:absolute -->
-                        <img src="assets/img/tutorial/video1.png">
-                        <div class="dom2" style="margin: auto;text-align: center;">
-                            <img src="assets/img/play.png">
-                        </div>
-    
-                        <h6 style="margin: 0px;;">Creating Mario</h6>
-    
-                        <div class="row">
-                            <div class="col-1">
-                                <p>6</p>
-                            </div>
-                            <div class="col-2" style="margin-left: -10px;">
-                                <i class="bi bi-chat-dots-fill" style="display: inline;color: #E5D352;"></i>
-                            </div>
-                            <div class="col-1">121</div>
-                            <div class="col">
-                                <i class="bi bi-heart-fill" style="color: #AC3931;"></i>
-                            </div>
-                        </div>
-                        
-                    </div>    
-
-                    <div class="dom1">
-                        <!-- position:absolute -->
-                        <img src="assets/img/tutorial/video1.png">
-                        <div class="dom2" style="margin: auto;text-align: center;">
-                            <img src="assets/img/play.png">
-                        </div>
-    
-                        <h6 style="margin: 0px;;">Creating Mario</h6>
-    
-                        <div class="row">
-                            <div class="col-1">
-                                <p>6</p>
-                            </div>
-                            <div class="col-2" style="margin-left: -10px;">
-                                <i class="bi bi-chat-dots-fill" style="display: inline;color: #E5D352;"></i>
-                            </div>
-                            <div class="col-1">121</div>
-                            <div class="col">
-                                <i class="bi bi-heart-fill" style="color: #AC3931;"></i>
-                            </div>
-                        </div>
-                        
-                    </div>    
-
-
-                    <div class="dom1">
-                        <!-- position:absolute -->
-                        <img src="assets/img/tutorial/video1.png">
-                        <div class="dom2" style="margin: auto;text-align: center;">
-                            <img src="assets/img/play.png">
-                        </div>
-    
-                        <h6 style="margin: 0px;;">Creating Mario</h6>
-    
-                        <div class="row">
-                            <div class="col-1">
-                                <p>6</p>
-                            </div>
-                            <div class="col-2" style="margin-left: -10px;">
-                                <i class="bi bi-chat-dots-fill" style="display: inline;color: #E5D352;"></i>
-                            </div>
-                            <div class="col-1">121</div>
-                            <div class="col">
-                                <i class="bi bi-heart-fill" style="color: #AC3931;"></i>
-                            </div>
-                        </div>
-                        
-                    </div>   
-                </div>
+                            
+                        </div>    
+                    </div>
+                  </div>
 
                 <div style="margin-bottom: 20px;">
                     <button type="button" class="btn btn-primary btn-lg selfcssbutton"  style="width: 150px;font-size: 15px;" >add your video</button>
@@ -403,113 +387,103 @@ input#search-bar{
                     <h5>your community wahtched video</h5>
                 </div>
 
-                <div style="display: flex;justify-content: space-between;">       
 
-                    <div class="dom1">
-                        <!-- position:absolute -->
-                        <img src="assets/img/tutorial/video1.png">
-                        <div class="dom2" style="margin: auto;text-align: center;">
-                            <img src="assets/img/play.png">
+                <div class="container">
+                    <div class="row">
+                        <div class="dom1 col">
+                            <!-- position:absolute -->
+                            <img src="assets/img/tutorial/video1.png">
+                            <div class="dom2" style="margin: auto;text-align: center;">
+                                <img src="assets/img/play.png">
+                            </div>
+        
+                            <h6 style="margin: 0px;;">Creating Mario</h6>
+        
+                            <div class="row">
+                                <div class="col-1">
+                                    <p>6</p>
+                                </div>
+                                <div class="col-2" style="margin-left: -10px;">
+                                    <i class="bi bi-chat-dots-fill" style="display: inline;color: #E5D352;"></i>
+                                </div>
+                                <div class="col-1">121</div>
+                                <div class="col">
+                                    <i class="bi bi-heart-fill" style="color: #AC3931;"></i>
+                                </div>
+                            </div>
+                            
+                        </div>    
+                        <div class="dom1 col">
+                            <!-- position:absolute -->
+                            <img src="assets/img/tutorial/video1.png">
+                            <div class="dom2" style="margin: auto;text-align: center;">
+                                <img src="assets/img/play.png">
+                            </div>
+        
+                            <h6 style="margin: 0px;;">Creating Mario</h6>
+        
+                            <div class="row">
+                                <div class="col-1">
+                                    <p>6</p>
+                                </div>
+                                <div class="col-2" style="margin-left: -10px;">
+                                    <i class="bi bi-chat-dots-fill" style="display: inline;color: #E5D352;"></i>
+                                </div>
+                                <div class="col-1">121</div>
+                                <div class="col">
+                                    <i class="bi bi-heart-fill" style="color: #AC3931;"></i>
+                                </div>
+                            </div>
+                            
+                        </div>    
+                        <div class="dom1 col">
+                            <!-- position:absolute -->
+                            <img src="assets/img/tutorial/video1.png">
+                            <div class="dom2" style="margin: auto;text-align: center;">
+                                <img src="assets/img/play.png">
+                            </div>
+        
+                            <h6 style="margin: 0px;;">Creating Mario</h6>
+        
+                            <div class="row">
+                                <div class="col-1">
+                                    <p>6</p>
+                                </div>
+                                <div class="col-2" style="margin-left: -10px;">
+                                    <i class="bi bi-chat-dots-fill" style="display: inline;color: #E5D352;"></i>
+                                </div>
+                                <div class="col-1">121</div>
+                                <div class="col">
+                                    <i class="bi bi-heart-fill" style="color: #AC3931;"></i>
+                                </div>
+                            </div>
+                            
                         </div>
-    
-                        <h6 style="margin: 0px;;">Creating Mario</h6>
-    
-                        <div class="row">
-                            <div class="col-1">
-                                <p>6</p>
+                        <div class="dom1 col">
+                            <!-- position:absolute -->
+                            <img src="assets/img/tutorial/video1.png">
+                            <div class="dom2" style="margin: auto;text-align: center;">
+                                <img src="assets/img/play.png">
                             </div>
-                            <div class="col-2" style="margin-left: -10px;">
-                                <i class="bi bi-chat-dots-fill" style="display: inline;color: #E5D352;"></i>
+        
+                            <h6 style="margin: 0px;;">Creating Mario</h6>
+        
+                            <div class="row">
+                                <div class="col-1">
+                                    <p>6</p>
+                                </div>
+                                <div class="col-2" style="margin-left: -10px;">
+                                    <i class="bi bi-chat-dots-fill" style="display: inline;color: #E5D352;"></i>
+                                </div>
+                                <div class="col-1">121</div>
+                                <div class="col">
+                                    <i class="bi bi-heart-fill" style="color: #AC3931;"></i>
+                                </div>
                             </div>
-                            <div class="col-1">121</div>
-                            <div class="col">
-                                <i class="bi bi-heart-fill" style="color: #AC3931;"></i>
-                            </div>
-                        </div>
-                        
-                    </div>    
-
-
-                    <div class="dom1">
-                        <!-- position:absolute -->
-                        <img src="assets/img/tutorial/video1.png">
-                        <div class="dom2" style="margin: auto;text-align: center;">
-                            <img src="assets/img/play.png">
-                        </div>
-    
-                        <h6 style="margin: 0px;;">Creating Mario</h6>
-    
-                        <div class="row">
-                            <div class="col-1">
-                                <p>6</p>
-                            </div>
-                            <div class="col-2" style="margin-left: -10px;">
-                                <i class="bi bi-chat-dots-fill" style="display: inline;color: #E5D352;"></i>
-                            </div>
-                            <div class="col-1">121</div>
-                            <div class="col">
-                                <i class="bi bi-heart-fill" style="color: #AC3931;"></i>
-                            </div>
-                        </div>
-                        
-                    </div>    
-
-                    <div class="dom1">
-                        <!-- position:absolute -->
-                        <img src="assets/img/tutorial/video1.png">
-                        <div class="dom2" style="margin: auto;text-align: center;">
-                            <img src="assets/img/play.png">
-                        </div>
-    
-                        <h6 style="margin: 0px;;">Creating Mario</h6>
-    
-                        <div class="row">
-                            <div class="col-1">
-                                <p>6</p>
-                            </div>
-                            <div class="col-2" style="margin-left: -10px;">
-                                <i class="bi bi-chat-dots-fill" style="display: inline;color: #E5D352;"></i>
-                            </div>
-                            <div class="col-1">121</div>
-                            <div class="col">
-                                <i class="bi bi-heart-fill" style="color: #AC3931;"></i>
-                            </div>
-                        </div>
-                        
-                    </div>    
-
-
-                    <div class="dom1">
-                        <!-- position:absolute -->
-                        <img src="assets/img/tutorial/video1.png">
-                        <div class="dom2" style="margin: auto;text-align: center;">
-                            <img src="assets/img/play.png">
-                        </div>
-    
-                        <h6 style="margin: 0px;;">Creating Mario</h6>
-    
-                        <div class="row">
-                            <div class="col-1">
-                                <p>6</p>
-                            </div>
-                            <div class="col-2" style="margin-left: -10px;">
-                                <i class="bi bi-chat-dots-fill" style="display: inline;color: #E5D352;"></i>
-                            </div>
-                            <div class="col-1">121</div>
-                            <div class="col">
-                                <i class="bi bi-heart-fill" style="color: #AC3931;"></i>
-                            </div>
-                        </div>
-                        
-                    </div>   
-                </div>
-
-            </div>
-
-            <div class="col-1">
-                
-                <!-- right -->
-
+                            
+                        </div>    
+                    </div>
+                  </div>
 
             </div>
 

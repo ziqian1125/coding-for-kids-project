@@ -136,6 +136,11 @@ a {
   display:none;
   }
 
+
+::-webkit-scrollbar {
+/*隐藏滚轮*/
+display: none;
+}
  
 
 </style>
@@ -147,7 +152,8 @@ a {
 
 
 
-  <header class="header" style="background-color: rgba(83, 125, 141, 1);height: 68px;">
+
+  <header class="header" style="background-color: rgba(83, 125, 141, 1);border-color: rgba(83, 125, 141, 1);">
     <h1 class="logo"><a href="#" style="color: white;">logo</a></h1>
       <ul class="main-nav">
           <li ><a href="#"  style="color: white;">message</a></li>
@@ -155,7 +161,7 @@ a {
       </ul>
   </header> 
 
-  <div style="display: flex;justify-content:space-around;;">
+  <div style="display: flex;justify-content:space-between;">
     <div class="leftside" style="margin-left: 55px;">
       <div style="text-align: center;">
         <img src="assets/img/avatar.jpg" style="max-height: 200px;">
@@ -165,7 +171,7 @@ a {
       <div style="margin: 30px;">
   
         <div style="margin: 10px;">
-          <button type="button" class="btn btn-primary btn-lg selfcssbutton" onclick="location.href='0.dashboard.html'">My room</button>
+          <button type="button" class="btn btn-primary btn-lg selfcssbutton" onclick="location.href='0.dashboard.html'">Dashboard</button>
         </div>
     
         <div style="margin: 10px;">
@@ -195,7 +201,7 @@ a {
 
 
 
-      <div class="row g-0" style="margin-top: 10px; height: 400px; width: 700; background-image: url(assets/img/classroom.jpg); background-size: cover;">
+      <div class="row g-0" style="margin-top: 10px; height: 400px; width: 700; background-image: url(assets/img/classroom.jpg); background-size: cover;overflow: scroll;">
         <div class="card mb-3"
             style="width: 320px;margin: 30px;background-color: rgba(255, 255, 255, 0.747); text-align: center;">
             <div style="margin-top: 20px;">

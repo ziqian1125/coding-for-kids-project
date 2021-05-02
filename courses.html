@@ -152,6 +152,21 @@
     #gsywly {
         display: none;
     }
+
+
+    .background{
+           background-color:rgba(0, 29, 74, 1);
+        }
+        .buttonBg{
+           background-color:#537D8D;
+        }
+        .textcolor{
+        color: #FFFFFF
+        } 
+
+        .btn-close{
+          background:rgba(0, 29, 74, 1) !important;
+        }  
 </style>
 
 
@@ -219,8 +234,9 @@
                         <h4 class="card-title"><a href="#"></a>Duck hunt</h4>
                         <img src="assets/img/course1.jpg" style="width: 185px;height: 150px;padding: 10%;">
                         <p class="card-text">Some kind of longer course description </p>
-                        <button type="button" class="btn btn-primary btn-lg selfcssbutton"
-                            style="width:100px;">JOIN</button>
+                        <button type="button" class="btn btn-primary textcolor" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-family: 'Montserrat'; font-size: 18px; width:100px; background-color:#537D8D";>
+                            JOIN
+                          </button>
                     </div>
                 </div>
 
@@ -231,12 +247,16 @@
                         <h4 class="card-title"><a href="#"></a>Monster hunt</h4>
                         <img src="assets/img/course1.jpg" style="width: 185px;height: 150px;padding: 10%;">
                         <p class="card-text">Some kind of longer course description </p>
-                        <button type="button" class="btn btn-primary btn-lg selfcssbutton"
-                            style="width:100px;">JOIN</button>
+                        <button type="button" class="btn btn-primary textcolor" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-family: 'Montserrat'; font-size: 18px; width:100px; background-color:#537D8D";>
+                            JOIN
+                          </button>
                     </div>
                 </div>
             </div>
         </div>
+
+
+
 
         <div id="sidebar" class="col">
             <div class="list-group" style="margin: 50px; color: white">
@@ -280,6 +300,31 @@
             </div>
 
         </div>
+
+  
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content background" style=background-color:rgba(0,29,74,1);>
+                <div class="modal-header" style=border-bottom:rgba(0,29,74,1)>
+                <button type="button" class="btn-close" style="margin-right: 8px" data-bs-dismiss="modal" aria-label="Close"><img src="closebtn.png" style="width: 25px; height:25px"></button>
+                </div>
+                <div class="modal-body" style="font-family: 'Montserrat'; font-size: 18px; margin-left: 20px;margin-right: 20px">
+                    <h5 class="textcolor text-center"> You have joined this course</h5>
+                    </div> 
+        <!-- Submit button -->
+        <div class="d-grid gap-2 d-md-flex">
+            <button type="submit" class="btn btn-secondary btn-sm buttonBg" style="font-family: 'Montserrat'; font-size: 18px; margin-left: 212px; margin-bottom:30px; width:100px; background-color:#537D8D;"  data-bs-dismiss="modal">OK</button>
+        </div>
+                </div>
+        <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+                </div>
+            </div>
+            </div>
+        </div>   
 
     </div>
     <script src="assets/js/jquery-3.3.1.min.js"></script>

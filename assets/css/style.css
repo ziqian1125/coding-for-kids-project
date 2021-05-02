@@ -9,7 +9,7 @@ a:hover, a:focus { color: #a365bc; border: 0; text-decoration: none; }
 h1, h2 { margin-top: 10px; font-size: 38px; font-weight: 300; color:white; line-height: 50px; font-style:bold; }
 h3 { font-size: 22px; font-weight: 300; color: #555; line-height: 30px; font-style: italic; }
 
-img { max-width: 100%; }
+/* img { max-width: 100%; } */
 
 .medium-paragraph { font-size: 17px; line-height: 32px; }
 

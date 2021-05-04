@@ -154,19 +154,21 @@
     }
 
 
-    .background{
-           background-color:rgba(0, 29, 74, 1);
-        }
-        .buttonBg{
-           background-color:#537D8D;
-        }
-        .textcolor{
-        color: #FFFFFF
-        } 
+    .background {
+        background-color: rgba(0, 29, 74, 1);
+    }
 
-        .btn-close{
-          background:rgba(0, 29, 74, 1) !important;
-        }  
+    .buttonBg {
+        background-color: #537D8D;
+    }
+
+    .textcolor {
+        color: #FFFFFF
+    }
+
+    .btn-close {
+        background: rgba(0, 29, 74, 1) !important;
+    }
 </style>
 
 
@@ -194,71 +196,98 @@
             <div style="margin: 30px;">
 
                 <div style="margin: 10px;">
-                    <button type="button" class="btn btn-primary btn-lg selfcssbutton" onclick="location.href='0.dashboard.html'">My room</button>
+                    <button type="button" class="btn btn-primary btn-lg selfcssbutton"
+                        onclick="location.href='0.dashboard.html'">My room</button>
                 </div>
 
                 <div style="margin: 10px;">
-                    <button type="button" class="btn btn-primary btn-lg selfcssbutton" onclick="location.href='courses.html'" style="background-color: rgba(229, 211, 82, 1);">Courses</button>
+                    <button type="button" class="btn btn-primary btn-lg selfcssbutton"
+                        onclick="location.href='courses.html'"
+                        style="background-color: rgba(229, 211, 82, 1);">Courses</button>
                 </div>
 
                 <div style="margin: 10px;">
-                    <button type="button" class="btn btn-primary btn-lg selfcssbutton" onclick="location.href='community.html'">My community</button>
+                    <button type="button" class="btn btn-primary btn-lg selfcssbutton"
+                        onclick="location.href='community.html'">My community</button>
                 </div>
 
                 <div style="margin: 10px;">
-                    <button type="button" class="btn btn-primary btn-lg selfcssbutton" onclick="location.href='tutorial.html'">Find tutorial</button>
+                    <button type="button" class="btn btn-primary btn-lg selfcssbutton"
+                        onclick="location.href='tutorial.html'">Find tutorial</button>
                 </div>
 
                 <div style="margin: 10px;">
-                    <button type="button" class="btn btn-primary btn-lg selfcssbutton" onclick="location.href='Classroom.html'">Live classroom</button>
+                    <button type="button" class="btn btn-primary btn-lg selfcssbutton"
+                        onclick="location.href='Classroom.html'">Live classroom</button>
                 </div>
             </div>
         </div>
 
 
         <div class="container" style="margin: 25px; width: 60%;">
-            <div style="margin: 50px">
+            <div style="margin: 20px">
                 <h1 style="text-align: center;">Courses</h1>
             </div>
-            <div class="row">
-                <div class="col-sm-12 mb-3">
-                    <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()"
-                        placeholder="Search for names..">
-                </div>
+            <div class="col-sm-12 mb-3">
+                <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()"
+                    placeholder="Search for courses...">
             </div>
-            <div class="row" id="myItems">
-                <div class="card" style="width: 250px;margin: 30px;background-color: rgba(255,255,255,0.1);
-                                        padding: 5px;">
-                    <div class="card-body">
+            <div class="row equal" id="myItems">
+                <div class="card" style="margin: 2%; padding: 2%; background-color: rgba(255,255,255,0.1);">
+                    <div class="card-img-top d-flex img-fluid" style="height:fit-content;">
+                        <img src="assets/img/course1.jpg" class="image-icon-main">
+                        <div class="card-text" style="text-align: left; padding: 3%; ">
+                            <h4 class="card-title"><a href="#"></a>Duck hunt</h4>
+                            <p>Duck Hunt is a fantastic arcade game that takes inspiration from the original classic
+                                available on Nintendo game systems. You must shoot the moving ducks down with your mouse
+                                and see how many points you can score. The hunting is fun and the controls to aim and
+                                fire your weapon are simple to master.</p>
+                            <button type="button" class="btn btn-primary textcolor" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"
+                                style="font-family: 'Montserrat'; font-size: 18px; width:100px; background-color:#537D8D">Join
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="margin:2%; padding: 2%; background-color: rgba(255,255,255,0.1)">
+                    <div class="card-img-top d-flex img-fluid" style="height:fit-content;">
+                        <img src="assets/img/python.jfif" class="image-icon-main">
+                        <div class="card-text" style="text-align: left; padding: 3%; text-overflow: ellipsis;
+                            overflow: auto;">
+                            <h4 class="card-title"><a href="#"></a>Python for Beginners</h4>
+                            <p>Python is a general-purpose coding language—which means that, unlike HTML, CSS, and
+                                JavaScript, it can be used for other types of programming and software development
+                                besides web development.</p>
+                            <button type="button" class="btn btn-primary textcolor" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"
+                                style="font-family: 'Montserrat'; font-size: 18px; width:100px; background-color:#537D8D">Join
+                            </button>
 
-                        <h4 class="card-title"><a href="#"></a>Duck hunt</h4>
-                        <img src="assets/img/course1.jpg" style="width: 185px;height: 150px;padding: 10%;">
-                        <p class="card-text">Some kind of longer course description </p>
-                        <button type="button" class="btn btn-primary textcolor" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-family: 'Montserrat'; font-size: 18px; width:100px; background-color:#537D8D";>
-                            JOIN
-                          </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="margin:2%; padding: 2%; background-color: rgba(255,255,255,0.1)">
+                    <div class="card-img-top d-flex img-fluid" style="height:fit-content;">
+                        <img src="assets/img/java.jfif" class="image-icon-main">
+                        <div class="card-text" style="text-align: left; padding: 3%; text-overflow: ellipsis;
+                            overflow: auto;">
+                            <h4 class="card-title"><a href="#"></a>Java for Beginners</h4>
+                            <p>Java is a popular programming language, created in 1995. It is owned by Oracle, and more
+                                than 3 billion devices run Java. If you want to be a developer, Java is a good way to
+                                go.</p>
+                            <button type="button" class="btn btn-primary textcolor" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"
+                                style="font-family: 'Montserrat'; font-size: 18px; width:100px; background-color:#537D8D">Join
+                            </button>
+
+                        </div>
                     </div>
                 </div>
 
-                <div class="card" style="width: 250px;margin: 30px;background-color: rgba(255,255,255,0.1);
-                                        padding: 5px;">
-                    <div class="card-body">
-
-                        <h4 class="card-title"><a href="#"></a>Monster hunt</h4>
-                        <img src="assets/img/course1.jpg" style="width: 185px;height: 150px;padding: 10%;">
-                        <p class="card-text">Some kind of longer course description </p>
-                        <button type="button" class="btn btn-primary textcolor" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-family: 'Montserrat'; font-size: 18px; width:100px; background-color:#537D8D";>
-                            JOIN
-                          </button>
-                    </div>
-                </div>
             </div>
         </div>
 
-
-
-
-        <div id="sidebar" class="col">
+        <div id="sidebar" class="col-sm-3">
             <div class="list-group" style="margin: 50px; color: white">
                 <h4>My courses</h4>
                 <div style="margin: 5px; background-color: rgba(255,255,255,0.1);"
@@ -301,30 +330,34 @@
 
         </div>
 
-  
+
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content background" style=background-color:rgba(0,29,74,1);>
-                <div class="modal-header" style=border-bottom:rgba(0,29,74,1)>
-                <button type="button" class="btn-close" style="margin-right: 8px" data-bs-dismiss="modal" aria-label="Close"><img src="closebtn.png" style="width: 25px; height:25px"></button>
+                <div class="modal-content background" style=background-color:rgba(0,29,74,1);>
+                    <div class="modal-header" style=border-bottom:rgba(0,29,74,1)>
+                        <button type="button" class="btn-close" style="margin-right: 8px" data-bs-dismiss="modal"
+                            aria-label="Close"><img src="closebtn.png" style="width: 25px; height:25px"></button>
+                    </div>
+                    <div class="modal-body"
+                        style="font-family: 'Montserrat'; font-size: 18px; margin-left: 20px;margin-right: 20px">
+                        <h5 class="textcolor text-center"> You have joined this course</h5>
+                    </div>
+                    <!-- Submit button -->
+                    <div class="d-grid gap-2 d-md-flex">
+                        <button type="submit" class="btn btn-secondary btn-sm buttonBg"
+                            style="font-family: 'Montserrat'; font-size: 18px; margin-left: 212px; margin-bottom:30px; width:100px; background-color:#537D8D;"
+                            data-bs-dismiss="modal">OK</button>
+                    </div>
                 </div>
-                <div class="modal-body" style="font-family: 'Montserrat'; font-size: 18px; margin-left: 20px;margin-right: 20px">
-                    <h5 class="textcolor text-center"> You have joined this course</h5>
-                    </div> 
-        <!-- Submit button -->
-        <div class="d-grid gap-2 d-md-flex">
-            <button type="submit" class="btn btn-secondary btn-sm buttonBg" style="font-family: 'Montserrat'; font-size: 18px; margin-left: 212px; margin-bottom:30px; width:100px; background-color:#537D8D;"  data-bs-dismiss="modal">OK</button>
-        </div>
-                </div>
-        <!-- <div class="modal-footer">
+                <!-- <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
         </div> -->
-                </div>
             </div>
-            </div>
-        </div>   
+        </div>
+    </div>
+    </div>
 
     </div>
     <script src="assets/js/jquery-3.3.1.min.js"></script>

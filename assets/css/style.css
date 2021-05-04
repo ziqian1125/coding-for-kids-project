@@ -126,3 +126,21 @@ h3 { font-size: 22px; font-weight: 300; color: #555; line-height: 30px; font-sty
 
 footer { padding: 40px 0; }
 
+/***** Card layout *****/
+
+.card-img-top {
+    width: 100%;
+    height: 10vw;
+    object-fit: cover;
+}
+h4{
+	color: white;
+
+}
+
+.image-icon-main {
+	width: 20ex;
+	height: 20ex;
+	vertical-align:middle;
+}
+

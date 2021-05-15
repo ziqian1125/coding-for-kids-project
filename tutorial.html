@@ -68,6 +68,14 @@ input#search-bar{
   margin-left: -60px;
 }
 
+.data{
+    width: 150px;
+}
+/* 
+.row{
+    width: 200px;
+} */
+
     
 </style>
 
@@ -132,7 +140,7 @@ input#search-bar{
                 <!-- <p>col-8</p> -->
 
                 <div class="input-group input-group-sm mb-3" style="width:160px;margin-top: 30px;">
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                    <input type="text" id="myFilter" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"  onkeyup="myFunction2()">
                     <span class="input-group-text" id="inputGroup-sizing-sm"><i class="bi bi-search"></i></span>
                 </div>
                 <!-- search -->
@@ -183,7 +191,7 @@ input#search-bar{
 
 
                 <div class="container">
-                    <div class="row">
+                    <div class="row" id="myItems">
                         <div class="dom1 col">
                             <!-- position:absolute -->
                             <img src="assets/img/tutorial/video1.png">
@@ -193,7 +201,7 @@ input#search-bar{
         
                             <h6 style="margin: 0px;;">Creating Mario</h6>
         
-                            <div class="row">
+                            <div class="row data">
                                 <div class="col-1">
                                     <p>6</p>
                                 </div>
@@ -214,9 +222,9 @@ input#search-bar{
                                 <img src="assets/img/play.png">
                             </div>
         
-                            <h6 style="margin: 0px;;">Creating Mario</h6>
+                            <h6 style="margin: 0px;;">javascript course</h6>
         
-                            <div class="row">
+                            <div class="row data">
                                 <div class="col-1">
                                     <p>6</p>
                                 </div>
@@ -237,9 +245,9 @@ input#search-bar{
                                 <img src="assets/img/play.png">
                             </div>
         
-                            <h6 style="margin: 0px;;">Creating Mario</h6>
+                            <h6 style="margin: 0px;;">Creating pacman</h6>
         
-                            <div class="row">
+                            <div class="row data">
                                 <div class="col-1">
                                     <p>6</p>
                                 </div>
@@ -262,7 +270,7 @@ input#search-bar{
         
                             <h6 style="margin: 0px;;">Creating Mario</h6>
         
-                            <div class="row">
+                            <div class="row data">
                                 <div class="col-1">
                                     <p>6</p>
                                 </div>
@@ -518,5 +526,26 @@ input#search-bar{
         <div class="playpause"></div>
     </div> -->
 
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.backstretch.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+    <script src="assets/js/sidebar-highlight.js"></script>
+    <script src="assets/js/filter.js"></script>
 </body>
 </html>

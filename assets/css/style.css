@@ -3,10 +3,7 @@ body { font-family: 'Open Sans', sans-serif; font-size: 15px; font-weight: 400; 
 
 strong { font-weight: 600; }
 
-a { color: #a365bc; border-bottom: 1px dashed #a365bc; text-decoration: none; transition: all .3s; }
-a:hover, a:focus { color: #a365bc; border: 0; text-decoration: none; }
-
-h1, h2 { margin-top: 10px; font-size: 38px; font-weight: 300; color:white; line-height: 50px; font-style:bold; }
+h1, h2 {margin-top: 20px; color:#f4f4f4; font-size: 30px; text-align: center; font-weight: bold;}
 h3 { font-size: 22px; font-weight: 300; color: #555; line-height: 30px; font-style: italic; }
 
 /* img { max-width: 100%; } */

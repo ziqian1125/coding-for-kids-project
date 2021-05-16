@@ -235,7 +235,7 @@ input#search-bar{
 
   
           <div style="text-align:center;margin-top: -60px;width: 100%;">
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color:#537D8D;"; onclick="showform()">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color:#537D8D;border: 0px;"; onclick="showform()">
               Ask for help
             </button>          
           </div>
@@ -253,11 +253,11 @@ input#search-bar{
             <button type="button" class="btn-close" style="margin-right: 8px" data-bs-dismiss="modal" aria-label="Close"><img src="closebtn.png" style="width: 25px; height:25px"></button></button>
            </div>
     
-          <div class="modal-body" style="font-family: 'Montserrat'; font-size: 18px;margin-left: 20px;margin-right: 20px">
+          <div class="modal-body" style="font-family: 'Montserrat' sans-serif; margin-left: 20px;margin-right: 20px">
            <form>
 
      <!-- <h3 class="textcolor text-center" id="formtitle"> ask for help</h3> -->
-     <h3 class="textcolor text-center" id="formtitle"> Hi there!</h3>
+     <h3 class="textcolor text-center" id="formtitle" style="font-size: 20px;"> Hi there!</h3>
      <p class="textcolor text-center" id="formDes">Here you can find help with your issue.<br>
       The Coding for Kids community mentors,<br>your friends and teachers will be happy to help you.<br>
      Just explain to us where you are stuck, provide a course name and choose from who do you want to ask. You can also attach a screenshot or an image.</p>
@@ -268,30 +268,30 @@ input#search-bar{
   
         <!-- Name input -->
 <div id="bodyform">
-  <div class="mb-3" style="margin-left: 30px">
+  <div class="mb-3" style="margin-left: 30px;font-family: 'Montserrat' sans-serif;">
   <label for="recipient-name" class="col-form-label" style="color: #FFFFFF">Title:</label>
   <input type="recipient-name" class="form-control" id="recipient-name" style="width:200px;">
   </div>
 
-  <div class="mb-3" style="margin-left: 30px; margin-right: 30px">
+  <div class="mb-3" style="margin-left: 30px; margin-right: 30px;font-family: 'Montserrat' sans-serif;">
   <label for="message-text" class="col-form-label" style="color: #FFFFFF">Describe your issue:</label>
   <textarea class="form-control" id="message-text"></textarea>
   </div>
 
   <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-  <button type="submit" class="btn btn-secondary btn-sm buttonBg" style="margin-right: 30px; background-color:#537D8D;">Attach image</button>
+  <button type="submit" class="btn btn-secondary btn-sm buttonBg" style="margin-right: 30px; background-color:#537D8D;border: 0px;font-family: 'Montserrat' sans-serif;">Attach image</button>
 </div>
   
-    <h5 class="textcolor" style="margin-left: 30px">Ask for help</h5>
+    <h5 class="textcolor" style="margin-left: 30px;font-family: 'Montserrat' sans-serif;">Ask for help</h5>
       <div class="form-check form-check-inline" style="margin-left: 30px">
         <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
         <label class="form-check-label textcolor" for="inlineCheckbox1">Your community</label>
       </div>
-       <div class="form-check " style="margin-left: 30px">
+       <div class="form-check " style="margin-left: 30px;font-family: 'Montserrat' sans-serif;">
         <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
         <label class="form-check-label textcolor" for="inlineCheckbox2">Coding for Kids mentors</label>
        </div>
-       <div class="form-check form-check-inline" style="margin-left: 30px">
+       <div class="form-check form-check-inline" style="margin-left: 30px;font-family: 'Montserrat' sans-serif;">
         <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
         <label class="form-check-label textcolor" for="inlineCheckbox2">Teachers</label>
        </div>
@@ -302,8 +302,8 @@ input#search-bar{
   <div class="d-grid gap-2 d-md-flex justify-content-md-end">
   <!-- <button type="submit" class="btn btn-secondary btn-sm buttonBg float-end" style="margin-right: 30px; margin-bottom:30px; background-color:#537D8D;">Send</button> -->
   <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" style="background-color:#537D8D;margin-right: 30px;margin-bottom: 30px;"; onclick="send()" id="sendB" >
-    send
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" style="background-color:#537D8D;margin-right: 30px;margin-bottom: 30px;border: 0px;"; onclick="send()" id="sendB" >
+    Send
   </button>
 
   <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" style="background-color:#537D8D;display: none;"; onclick="send()">

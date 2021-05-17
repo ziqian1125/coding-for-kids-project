@@ -277,8 +277,10 @@ input#search-bar{
      <!-- <h3 class="textcolor text-center" id="formtitle"> ask for help</h3> -->
      <h3 class="textcolor text-center" id="formtitle" style="font-size: 20px;"> Hi there!</h3>
      <p class="textcolor text-center" id="formDes">Here you can find help with your issue.<br>
-      The Coding for Kids community mentors,<br>your friends and teachers will be happy to help you.<br>
-     Just explain to us where you are stuck, provide a course name and choose from who do you want to ask. You can also attach a screenshot or an image.</p>
+      The Coding for Kids community mentors,<br>your friends and teachers will be happy to help you.
+      <br>
+ You can also attach a screenshot or an image.
+</p>
      <!-- <p class="textcolor text-center" id="formDes">Here you can find help with your issue.<br> -->
       <!-- The Coding for Kids community mentors,<br>your friends and teachers will be happy to help you.<br>
      Just explain us your where do you stuck and provide a course name and choose the person you want to ask.<br>You also can attach a screenshot or image.</p> -->
@@ -292,26 +294,51 @@ input#search-bar{
   </div>
 
   <div class="mb-3" style="margin-left: 30px; margin-right: 30px;font-family: 'Montserrat' sans-serif;">
-  <label for="message-text" class="col-form-label" style="color: #FFFFFF">Describe your issue:</label>
+  <label for="message-text" class="col-form-label" style="color: #FFFFFF">Explain to us where you are stuck:</label>
   <textarea class="form-control" id="message-text"></textarea>
   </div>
 
   <div class="d-grid gap-2 d-md-flex justify-content-md-end">
   <button type="submit" class="btn btn-secondary btn-sm buttonBg" style="margin-right: 30px; background-color:#537D8D;border: 0px;font-family: 'Montserrat' sans-serif;">Attach image</button>
+
 </div>
+<!-- <div class="mb-3">
+
+  <input class="form-control" type="file" id="formFileMultiple" multiple>
+</div> -->
   
-    <h5 class="textcolor" style="margin-left: 30px;font-family: 'Montserrat' sans-serif;">Ask for help</h5>
+    <h5 class="textcolor" style="margin-left: 30px;font-family: 'Montserrat' sans-serif;">Ask for help
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16" style="color: white;" data-bs-toggle="popover" data-bs-trigger="focus" title="Help option" data-bs-content="The Coding for Kids community mentors,
+      your friends and teachers will be happy to help you.Choose the person you like to ask">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+      </svg>
+    </h5>
+    
       <div class="form-check form-check-inline" style="margin-left: 30px">
         <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
         <label class="form-check-label textcolor" for="inlineCheckbox1">Your community</label>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16" style="color: white;" data-bs-toggle="popover" data-bs-trigger="focus" title="Your Community" data-bs-content="And here's some amazing content. It's very engaging. Right?">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+        </svg> -->
       </div>
        <div class="form-check " style="margin-left: 30px;font-family: 'Montserrat' sans-serif;">
         <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
         <label class="form-check-label textcolor" for="inlineCheckbox2">Coding for Kids mentors</label>
-       </div>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16" style="color: white;" data-bs-toggle="popover" data-bs-trigger="focus" title="Coding for kids" data-bs-content="And here's some amazing content. It's very engaging. Right?">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+        </svg>        -->
+      
+      </div>
        <div class="form-check form-check-inline" style="margin-left: 30px;font-family: 'Montserrat' sans-serif;">
         <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
         <label class="form-check-label textcolor" for="inlineCheckbox2">Teachers</label>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16" style="color: white;" data-bs-toggle="popover" data-bs-trigger="focus" title="Teachers" data-bs-content="And here's some amazing content. It's very engaging. Right?">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+        </svg>  -->
        </div>
       
   </div>
@@ -479,6 +506,11 @@ input#search-bar{
    
    <script>
 
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+      })
+
       function change_div(id){
         if (id == 'gsywly' )
         {
@@ -505,7 +537,7 @@ input#search-bar{
         document.getElementById("sendB").style.display = "block"
         document.getElementById("formtitle").innerText = "Hi there!"
         // document.getElementById("formDes").innerText = "Here you can find help with your issue.The Coding for Kids community mentors,your friends and teachers will be happy to help you.     Just explain to us where you are stuck, provide a course name and choose from who do you want to ask. You can also attach a screenshot or an image."
-        document.getElementById("formDes").innerHTML = "<p class='textcolor text-center'>Here you can find help with your issue.<br>The Coding for Kids community mentors,<br>your friends and teachers will be happy to help you.<br>Just explain to us where you are stuck, provide a course name and choose from who do you want to ask. You can also attach a screenshot or an image.</p>"
+        document.getElementById("formDes").innerHTML = "<p class='textcolor text-center'>Here you can find help with your issue.<br><br></p>"
       }
 
     $(document).on('ready', function() {

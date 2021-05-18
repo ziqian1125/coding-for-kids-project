@@ -21,7 +21,7 @@ The purpose of this online environment is to teach children coding skills.  In t
 
 ## Usage
 
-<img src="assets/dash.jpg" width="400">
+<img src="Assets/dash.jpg" width="400">
 
 - After signing up/logging in the user is taken to the **dashboard**, where there is a visual overview of everything involving the user (participation in courses, ongoing projects). In **my room** it is possible to see progress in courses, goals. 
 - In **courses** page user can find relevant courses by using the search function and join them. 
